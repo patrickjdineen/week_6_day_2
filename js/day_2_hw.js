@@ -75,16 +75,16 @@ console.log(felicity.printInfo())
 const greaterTen = num => {
     return new Promise( (resolve, reject) =>{
        if (num > 10){
-           resolve(true)
+           resolve('Big Word')
        } else {
-            reject(false)
+            reject('Small Number')
        }
     })
 }
-greaterTen(7)
-.then((result) => {
-    console.log("Big word")
+greaterTen(12)
+.then((resolve) => {
+    console.log(resolve)
 })
-.catch((error)=>{
-    console.log("Small Number")
+.catch((reject)=>{
+    console.log(reject)
 })
