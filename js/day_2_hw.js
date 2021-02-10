@@ -18,7 +18,8 @@ let person3 = {
     }]
 }
 console.log(Object.keys(person3))
-if(Array.isArray(Object.values(person3.shakes))){
+console.log(Object.values(person3))
+if(Array.isArray(Object.keys(person3.shakes))){
     console.log(Object.values(person3.shakes))
 }
 
